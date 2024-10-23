@@ -109,6 +109,13 @@ dialog {
   background-color: hsl(172, 50%, 17%);
 }
 
+.dialogShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 30em) {
 
   .adviceContainer,
