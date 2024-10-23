@@ -1,0 +1,118 @@
+body {
+  background-color: hsl(172, 50%, 17%);
+  color: hsl(150, 16%, 93%);
+  font-family: "Nova Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.wrapper {
+  padding: 1.5rem;
+}
+
+.adviceContainer {
+  border-radius: .625rem;
+  background-color: hsl(157, 20%, 51%);
+  color: hsl(150, 16%, 93%);
+  cursor: pointer;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: .75rem;
+}
+
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-color: hsl(157, 20%, 51%);
+  border-bottom: .125rem solid hsl(150, 16%, 93%);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: #E9EFEC;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.btn_advice {
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  height: 3.125rem;
+  width: 6.25rem;
+}
+
+.btn_advice:hover {
+  background-color: hsl(172, 50%, 17%);
+  color: hsl(150, 16%, 93%);
+}
+
+.displayContainer {
+  border-radius: .625rem;
+  background-color: hsl(157, 20%, 51%);
+  color: hsl(150, 16%, 93%);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.number {
+  text-align: center;
+}
+
+.lesson {
+  text-align: center;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(150, 16%, 93%);
+  border: .063rem solid hsl(0, 0%, 80%);
+  padding: 1.25rem;
+  width: 18.75rem;
+  box-shadow: 0rem .125rem .313rem hsla(0, 0%, 0%, 0.3);
+  z-index: 9999;
+  border-radius: .5rem;
+}
+
+.error {
+  color: hsl(0, 100%, 50%);
+  font-weight: bold;
+  margin-bottom: .625rem;
+  text-align: center;
+}
+
+#dialog_btn {
+  background-color: hsl(157, 20%, 51%);
+  color: hsl(150, 16%, 93%);
+  border: none;
+  padding: .625rem 1.25rem;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
+#dialog_btn:hover {
+  background-color: hsl(172, 50%, 17%);
+}
+
+@media (min-width: 30em) {
+
+  .adviceContainer,
+  .displayContainer {
+    width: 31.25rem;
+  }
+}
