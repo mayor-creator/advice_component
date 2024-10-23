@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
   <title>Advice Generator</title>
   <script defer src="./app/index.js"></script>
 </head>
@@ -11,24 +16,27 @@
 <body>
   <main>
     <div class="wrapper">
-      <div>
+      <div class="adviceContainer">
         <label for="advice">
-          <input type="number" name="advice" id="advice">
+          <input type="number" name="advice" id="advice" value="1" placeholder="Enter 1 - 220">
         </label>
-        <button class="btn_advice" id="advice_btn">
-          Advice
-        </button>
+        <button class="btn_advice" id="advice_btn">Advice</button>
       </div>
       <div class="displayContainer">
-        <h1 id="advice_number" class="number">
-          Advice #117
-        </h1>
+        <h1 id="advice_number" class="number">Advice #117</h1>
         <p id="advice_message" class="lesson">
           "It is easy to sit up and take notice but, what's difficult is
           getting up and taking action"
         </p>
       </div>
     </div>
+    <dialog id="dialog">
+      <p class="error">
+        "Oops! It looks like there was a problem with that number.
+        Let's try a different number."
+      </p>
+      <button id="dialog_btn">Close</button>
+    </dialog>
   </main>
 </body>
 
